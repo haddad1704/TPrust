@@ -1,12 +1,14 @@
 Rust TP Noté
-j'ai cree une structure livre avec les champs necessaires : le titre, l'auteur, l'annee de parution, et un booleen pour savoir si le livre est disponible ou non.
-ensuite, j'ai utilise un vecteur  livres pour stocker tous les livres ajoutes par l'utilisateur. ce vecteur permet de garder les donnees en memoire pendant toute l'execution du programme, et on peut y ajouter ou modifier des livres.
-pour les interactions avec l'utilisateur, j'ai utilise stdin pour lire les entrees clavier, et un loop avec un match pour creer un menu simple qui tourne en boucle tant que l'utilisateur ne choisit pas de quitter.
-j'ai code une fonction ajouter qui permet d'insérer un nouveau livre dans le vecteur. avant d'ajouter, le programme verifie que le titre n'existe pas deja, pour eviter les doublons.
-ensuite, j'ai fait une fonction emprunter qui parcourt le vecteur et cherche un livre avec le titre saisi. si le livre est disponible, il devient indisponible.
+j'ai cree une structure livre avec les champs necessaires : le titre, l'auteur,l'annee de parution et un booleen pour savoir si le livre est disponible ou non.
+ensuite, j'ai utilise un vecteur  livres pour stocker tous les livres ajoutes par l'utilisateur. ce vecteur permet de garder les donnees en memoire pendant toute 
+l'execution du programme, et on peut y ajouter ou modifier des livres.
+pour les interactions avec l'utilisateur j'ai utilise stdin pour lire les entrees clavier, et un loop avec un match pour creer un menu simple qui tourne en boucle 
+tant que l'utilisateur ne choisit pas de quitter.
+j'ai code une fonction ajouter qui permet d'insérer un nouveau livre dans le vecteur. avant d'ajouter le programme verifie que le titre n'existe pas deja, pour eviter les doublons.
+ensuite, j'ai fait une fonction emprunter qui parcourt le vecteur et cherche un livre avec le titre saisi. si le livre est disponible il devient indisponible.
 la fonction retour fait l'inverse : elle rend le livre disponible a nouveau s'il avait ete emprunte.
 j'ai aussi deux fonctions d'affichage :
 une qui montre tous les livres
 une autre qui montre seulement les livres disponibles
-elles font une simple boucle sur le vecteur livres et affichent les infos des livres, en filtrant selon leur disponibilite si necessaire.
+elles font une simple boucle sur le vecteur livres et affichent les infos des livres en filtrant selon leur disponibilite si necessaire.
 
